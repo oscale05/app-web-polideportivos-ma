@@ -195,8 +195,12 @@ Al delegar: siempre incluir en el prompt la ruta de este `Agents.md` y el alcanc
 - [x] Verificación: `php -l`, `composer test` (15 tests / 53 assertions), `npx ng build
       --configuration production`, `npx ng lint` (sin errores) y un smoke test end-to-end
       vía el proxy de `ng serve` (:4200 → :8080).
-- [ ] Checklist manual de `planificacion.md` §13 en navegador (pantallas chicas, cámara,
+- [x] Checklist manual de `planificacion.md` §13 en navegador (pantallas chicas, cámara,
       compartir carnet) y ajustes de diseño que surjan.
+- [x] Repo Git inicializado (rama `main`), commit inicial hecho. `.env` y artefactos
+      ignorados vía `.gitignore` (verificado antes del commit).
+- [x] Fix iOS: el shell ahora es una columna flex scrolleable (header sticky arriba,
+      `.pagina` con `flex: 1 0 auto`, nav inferior fija) — el contenido ya no se corta.
 
 Servidores habituales en desarrollo: API `php -S 127.0.0.1:8080 -t backend/public`
 (log en `/tmp/opencode/api.log`); front `npx ng serve` en :4200 con proxy `/api` → :8080.
