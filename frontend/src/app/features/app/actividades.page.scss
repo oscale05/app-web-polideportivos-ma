@@ -1,0 +1,37 @@
+.actividad .encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.chip {
+  background: var(--acento-suave);
+  color: var(--azul-fuerte);
+  font-size: 0.72rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  white-space: nowrap;
+}
+.datos {
+  list-style: none;
+  margin: 0 0 0.7rem;
+  padding: 0;
+  font-size: 0.88rem;
+  color: var(--texto-suave);
+  line-height: 1.65;
+}
+.asistencia-barra {
+  height: 8px;
+  background: var(--acento-suave);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.35rem;
+}
+.asistencia-barra .relleno {
+  height: 100%;
+  background: var(--azul);
+  border-radius: 4px;
+  transition: width 0.3s;
+}

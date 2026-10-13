@@ -1,0 +1,26 @@
+# --- Sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Backend PHP ---
+# .env puede contener credenciales: jamás se commitea.
+# .env.example sí se commitea (plantilla sin secretos).
+backend/.env
+backend/vendor/
+backend/data/
+backend/storage/
+backend/.phpunit.result.cache
+*.log
+
+# --- Backend: archivos generados por seed (carnets y fotos de ejemplo) ---
+backend/storage/carnets/
+backend/storage/fotos/
+
+# --- Imágenes de debug / screenshots ---
+# Cambiar a trackeadas solo si se quiere versionar.
+imagen-error/
+
+# --- Editor / IDE ---
+.idea/
+.vscode/
+*.sublime-workspace

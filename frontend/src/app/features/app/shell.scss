@@ -1,0 +1,23 @@
+/* Columna de layout: header sticky arriba, contenido scrolleable, nav fija abajo.
+   min-height con dvh y fallback vh para que en iOS el body haga el scroll
+   en lugar de recortar el contenido. */
+.shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* El crecimiento de la página (flex: 1 0 auto) está en .pagina (styles.scss). */
+
+.salir {
+  margin-left: auto;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+}

@@ -1,0 +1,46 @@
+.codigo {
+  font-size: 1.6rem !important;
+  letter-spacing: 0.6rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.sugerencias {
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  margin-top: 0.3rem;
+  overflow: hidden;
+  background: #fff;
+}
+.sugerencias button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border: none;
+  border-bottom: 1px solid var(--borde);
+  background: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.sugerencias button:last-child { border-bottom: none; }
+.sugerencias button:active { background: var(--acento-suave); }
+
+.ayuda { font-size: 0.75rem; color: var(--texto-suave); margin-top: 0.25rem; }
+
+.acciones {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.fortaleza {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+.fortaleza.n1 { color: #ba1a1a; }
+.fortaleza.n2 { color: #8a6d00; }
+.fortaleza.n3 { color: #146c2e; }
+.fortaleza.n4 { color: #0d5123; }

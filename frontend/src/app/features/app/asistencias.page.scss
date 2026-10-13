@@ -1,0 +1,54 @@
+.volver {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  text-decoration: none;
+}
+
+.resumen {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 0.8rem;
+}
+.circulo {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: conic-gradient(var(--azul) var(--pct, 0%), var(--acento-suave) 0);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.circulo span {
+  background: #fff;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: var(--azul);
+  font-size: 0.95rem;
+}
+
+.lista { padding: 0.4rem 1rem; }
+.fila-asistencia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--borde);
+}
+.fila-asistencia:last-child { border-bottom: none; }
+.fecha { font-weight: 600; font-size: 0.9rem; }
+.estado {
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+}
+.estado.presente { background: #d3f2dc; color: #0d5123; }
+.estado.ausente { background: #ffdad6; color: #7c1d16; }
+.estado.pendiente { background: #eee; color: #555; }

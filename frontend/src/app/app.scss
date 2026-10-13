@@ -1,0 +1,6 @@
+/* El layout vive en cada página; acá solo se resetea el fondo.
+   Sin min-height: la altura la maneja el body/scroll. */
+:host {
+  display: block;
+  background: var(--fondo);
+}

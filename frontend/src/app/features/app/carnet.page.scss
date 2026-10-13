@@ -1,0 +1,21 @@
+.carnet {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+  margin-bottom: 0.9rem;
+  /* evita que la imagen se pegue al botón cuando hay poco espacio */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* separa imagen y botones para que los botones siempre queden alcanzables */
+.botones {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
